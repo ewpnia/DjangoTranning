@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link href="/static/hello_styles.css" rel="stylesheet" type="text/css">
+    <title>Hello</title>
+</head>
+<body>
+    <!-- <h1><i>Hello!</i></h1> -->
+    <h1>Hello!</h1>
+    </br>
+    <hr>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <hgroup>
+        <h3 style="color: red;">
+            You are {{ name }}, right?
+        </h3>
+        <h3>I'm EWP!</h3>
+        <h4>Nice to meet you!</h4>
+    </hgroup>
+
+    {% load staticfiles %}
+    <img src="{% static "hello.jpg" %}" alt="Hello image"/>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <hr>
+    
+    <a href="http://127.0.0.1:8000">
+        Back to the Homepage &amp; see what can be done &raquo;
+    </a>
+
+
+</body>
+</html>

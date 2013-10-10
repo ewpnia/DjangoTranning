@@ -1,0 +1,31 @@
+{% extends "base_list.html" %}
+
+{% block title %}Publisher list{% endblock %}
+
+{% block content %}
+    <h2>Publishers</h2>
+    <table border="1">
+        <tr>
+            <th>name</th>
+            <th>address</th>
+            <th>city</th>
+            <th>state_province</th>
+            <th>country</th>
+            <th>website</th>
+        </tr>
+        {% for publisher in object_list %}
+            <tr>
+                <td>{{ publisher.name }}</td>
+                <td>{{ publisher.address }}</td> 
+                <td>{{ publisher.city }}</td> 
+                <td>{{ publisher.state_province }}</td> 
+                <td>{{ publisher.country }}</td> 
+                <td>{{ publisher.website }}</td>
+            </tr>
+            </br>
+        {% endfor %}
+    </table>
+{% endblock %}
+{% block footer %}
+{{ block.super }}<b>This is the publisher list page.</b>
+{% endblock %}
