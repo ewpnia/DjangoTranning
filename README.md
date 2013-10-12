@@ -1,4 +1,4 @@
 DjangoTranning
 ==============
 
-A small exercise page build by Django.
+A simple exercise page build by Django.
